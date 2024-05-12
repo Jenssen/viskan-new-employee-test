@@ -1,0 +1,71 @@
+:root {
+	--color-white: #fff;
+	--color-black: #000;
+	--color-viskan-blue: #009dbd;
+	--color-viskan-dark-blue: #042b46;
+}
+
+.SearchForm-input {
+	width: 100%;
+}
+
+.SearchForm-input {
+	position: relative;
+	z-index: 2;
+	padding: 0px 8px;
+	font-size: 14px;
+	color: var(--color-black);
+	background: none;
+	border: 2px solid var(--color-viskan-blue);
+	border-radius: 26px;
+	box-sizing: border-box;
+}
+
+.SearchForm-input:focus {
+	outline: none;
+}
+
+.SearchForm-after{
+	position: absolute;
+	z-index: 1;
+	top: 3px;
+	right: 0;
+	width: 20px;
+	height: 20px;
+}
+
+.SearchForm-after:before,
+.SearchForm-after:after {
+	position: absolute;
+	content: '';
+	width: 11px;
+	height: 2px;
+	background-color: var(--color-viskan-blue);
+	border-radius: 0px;
+	transform-origin: 50% 50%;
+}
+
+.SearchForm-after:after {
+	right: -6px;
+	bottom: 0px;
+	transform: rotate(45deg);
+}
+
+.SearchForm-after:before {
+	top: 18px;
+	right: -6px;
+	transform: rotate(45deg);
+}
+
+.SearchForm-form {
+	position: relative;
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+.SearchForm-form.open .SearchForm-after {
+	cursor: pointer;
+}

@@ -1,0 +1,38 @@
+{
+ "name": "@viskan/deku-and-redux-app",
+ "version": "1.0.0",
+ "scripts": {
+  "build": "webpack --module-bind js=babel-loader --mode=production source/index.js -o build/index.js",
+  "watch": "webpack --watch --module-bind js=babel-loader --mode=development source/index.js -o build/index.js"
+ },
+ "dependencies": {
+  "magic-virtual-element": "1.0.6"
+ },
+ "devDependencies": {
+  "@babel/cli": "7.12.13",
+  "@babel/core": "7.12.13",
+  "@babel/preset-env": "7.12.13",
+  "@babel/preset-react": "7.12.13",
+  "babel-loader": "8.2.2",
+  "browserslist": "4.16.3",
+  "deku": "1.0.0",
+  "deku-redux": "1.1.2",
+  "eslint-config-xo-react": "0.13.0",
+  "eslint-plugin-react": "7.3.0",
+  "redux": "3.6.0",
+  "redux-logger": "3.0.6",
+  "webpack": "4.46.0",
+  "webpack-cli": "3.3.12"
+ },
+ "babel": {
+  "presets": [
+   "@babel/preset-env",
+   [
+    "@babel/preset-react",
+    {
+     "pragma": "dom"
+    }
+   ]
+  ]
+ }
+}

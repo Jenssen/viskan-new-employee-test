@@ -1,0 +1,14 @@
+{
+  "name": "spin-words",
+  "version": "1.0.0",
+  "description": "Reverse all words with more than five letters",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "author": "Viskan System AB",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "ava": "0.24.0"
+  }
+}

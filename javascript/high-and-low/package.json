@@ -1,0 +1,14 @@
+{
+  "name": "high-and-low",
+  "version": "1.0.0",
+  "description": "Return the highest and lowest number of a string",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "author": "Viskan System AB",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "ava": "0.24.0"
+  }
+}
