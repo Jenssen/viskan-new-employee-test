@@ -21,12 +21,24 @@
 	box-sizing: border-box;
 }
 
+.SearchForm-form.in .SearchForm-input {
+	animation-name: search;
+	animation-duration: 1.3s;
+}
+.SearchForm-form.open .SearchForm-input{
+	width: 200px;
+}
+.SearchForm-form.close .SearchForm-input {
+	animation-name: closeSearch;
+	animation-duration: 1.3s;
+}
+
 .SearchForm-input:focus {
 	outline: none;
 }
 
 .SearchForm-after{
-	position: absolute;
+	position: relative;
 	z-index: 1;
 	top: 3px;
 	right: 0;
@@ -59,7 +71,7 @@
 
 .SearchForm-form {
 	position: relative;
-	display: block;
+	display: flex;
 	width: 20px;
 	height: 20px;
 	margin: 0 auto;
@@ -68,4 +80,14 @@
 
 .SearchForm-form.open .SearchForm-after {
 	cursor: pointer;
+}
+
+@keyframes search {
+	from { width: 0px }
+	to { width: 200px }
+}
+
+@keyframes closeSearch {
+	from { width: 200px }
+	to { width: 0px; }
 }
