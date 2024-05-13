@@ -12,5 +12,5 @@ module.exports = input => {
 	const min = Math.min(...array)
 
 	const final = [max, min].join(' ')
-	return final;
+	return final
 };

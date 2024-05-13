@@ -10,5 +10,5 @@ button.addEventListener('click', () => {
   }
 
   localStorage.setItem('timestamp', JSON.stringify(data))
-  console.log('Current time saved to localStorage');
+  console.log('Current time saved to localStorage')
 })
